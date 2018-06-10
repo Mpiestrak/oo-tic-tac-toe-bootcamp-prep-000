@@ -117,12 +117,13 @@ def winner
   else
     if @board[index[0]] == "X"
       return "X"
-    else return "O"
+    else
+      return "O"
   end
 end
 end
 
-def player
+def play
   until over? == true
   turn_count
 end
